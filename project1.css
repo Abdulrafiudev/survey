@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    position: relative;
+    
 
 }
 .twitter_photo{
@@ -13,69 +14,119 @@
     justify-content: center;   
 }
 .photo{
-  height: 35px;
-  width: 40px;
-  border-radius: 10px;
+  height: 2.1875rem;
+  width: 2.5rem;
+  border-radius: 0.625rem;
 }
 .survey{
     font-family: 'Times New Roman';
-    font-size: 28px;
-    margin-bottom: 6px;
+    font-size: 1.75rem;
+    margin-bottom: 0.375rem;
     
     
 }
 .comment{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-style: italic;
     margin-top: 0;
 }
 .container{
     background-color: black;
-    height: 900px;
-    width: 400px;
-    border-width: 1px;
-    border-radius: 5px;
+    height: 56.25rem;
+    width: 35rem;
+    
+    border-width: 0.0625rem;
+    border-radius: 0.3125rem;
     border-style: solid;
     border-color: rgb(175, 171, 171);
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+@media (max-width:600px){
+    .container{
+        position: relative;
+    background-color: black;
+    height: 56.25rem;
+    width: 22rem;
+    border-width: 0.0625rem;
+    border-radius: 0.3125rem;
+    border-style: solid;
+    border-color: rgb(175, 171, 171);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .search{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 0.125rem;
+    border-width: 0.0625rem;
+    margin-left: 0.9375rem;
+    }
+    .button{
+         position: absolute;
+         bottom: 2.8125rem;
+         width: 70%;
+         margin-left: 3.125rem;
+         cursor: pointer;
+         
+         
+    }
+}
+@media (min-width: 601px)  {
+    .button{
+        position: absolute;
+        bottom: 2.8125rem;
+        width: 28.125rem;
+        margin-left: 3.3125rem;
+        
+        
+    }
+}
+
 .content{
     display: grid;
-    row-gap: 20px;
+    row-gap: 1.25rem;
 }
 .name{
     font-family: 'Times New Roman';
-    font-size: 15px;
-    margin-left: 12px;
+    font-size: 0.9375rem;
+    margin-left:0.75rem;
 }
 .search{
     display: flex;
-    flex: 1fr;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 24px;
-    border-radius: 2px;
-    border-width: 1px;
-    margin-left: 15px;
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 0.125rem;
+    border-width: 0.0625rem;
+    margin-left: 0.9375rem;
     
 }
 .checkbox-round{
     display: inline-block;
     appearance: none;
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
-    border-width: 2px;
+    border-width: 0.125rem;
     border-style: solid;
     border-color:rgb(254, 252, 252) ;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 0.9375rem;
 }
 .checkbox-round:checked{
     background-color: grey;
@@ -85,26 +136,24 @@
 .reply{
     display: inline-block;
     font-family: "arial";
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .submit{
     display: flex;
     justify-content: space-between;
+    align-items: center;
    
   
 
 }
 .button{
-    margin-top: 30px;
-    position: absolute;
-    margin-left: 50px;
-    
+    padding-left: 0.625rem;
+    padding-right:  0.625rem;
+    padding-top:  0.625rem;
+    padding-bottom:  0.625rem;
     background-color: black;
     color: white;
-    width: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-width: 1px;
-    cursor: pointer;
+    border-width:  0.0625rem;
+    border-color: white;
+    border-radius: 0.125rem;
 }
-
